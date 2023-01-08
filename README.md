@@ -2,7 +2,7 @@
 ## 接口文档
 https://www.apifox.cn/apidoc/shared-370e859f-b100-4058-9c56-5a111b881883
 ## 配置文件
-'''
+```
 # debug开发模式,release生产模式
 [service]
 AppMode = debug
@@ -30,4 +30,4 @@ DbPassWord =
 # mysql 密码
 DbName = 
 # mysql 名字
-'''
+```
