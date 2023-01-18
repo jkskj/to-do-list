@@ -91,7 +91,7 @@ func (service *ShowTaskService) Show(tid string) serializer.Response {
 			Error:  err.Error(),
 		}
 	}
-	//task.AddView() //增加点击数
+	task.AddView() //增加点击数
 	return serializer.Response{
 		Status: code,
 		Data:   serializer.BuildTask(task),

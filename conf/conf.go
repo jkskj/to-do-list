@@ -1,6 +1,7 @@
 package conf
 
 import (
+	"3/cache"
 	"3/model"
 	"fmt"
 	"gopkg.in/ini.v1"
@@ -41,5 +42,5 @@ func LoadMysql(file *ini.File) {
 	DbName = file.Section("mysql").Key("DbName").String()
 	path := strings.Join([]string{DbUser, ":", DbPassWord, "@tcp(", DbHost, ":", DbPort, ")/", DbName, "?charset=utf8mb4&parseTime=true"}, "")
 	model.Database(path)
-	//cache.Init()
+	cache.Init()
 }

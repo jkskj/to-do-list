@@ -16,9 +16,9 @@ func NewRouter() *gin.Engine {
 	r.Use(sessions.Sessions("my_session", store))
 	v1 := r.Group("/api/v1")
 	{
-		//注册路由
+		//用户注册
 		v1.POST("/register", api.UserRegister)
-		//登录路由
+		//用户登录
 		v1.POST("/login", api.UserLogin)
 		authed := v1.Group("/")
 		//设置中间件

@@ -17,11 +17,11 @@ type Task struct {
 
 func BuildTask(item model.Task) Task {
 	return Task{
-		ID:      item.ID,
-		Title:   item.Title,
-		Content: item.Content,
-		Status:  item.Status,
-		//View:      item.View(),
+		ID:        item.ID,
+		Title:     item.Title,
+		Content:   item.Content,
+		Status:    item.Status,
+		View:      item.View(),
 		CreatedAt: item.CreatedAt.Unix(),
 		StartTime: item.StartTime,
 		EndTime:   item.EndTime,
