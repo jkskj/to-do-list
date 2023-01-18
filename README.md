@@ -15,7 +15,7 @@ RedisAddr =
 # redis ip地址和端口号
 RedisPw = 
 # redis 密码
-RedisDbName = 2
+RedisDbName = 
 # redis 名字
 
 [mysql]
